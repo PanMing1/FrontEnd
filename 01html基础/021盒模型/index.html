@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .item{
+        width: 150px;height: 150px;
+        float: left;
+        margin: 20px;
+    }
+    * {
+        margin: 0;
+        /* 将所有的元素边距都设置为0，防止页面有其他元素有自带边距 */
+    }
+    #box{
+        overflow: auto;
+        width: 570px;
+        margin: auto;
+        /* 让父元素自动设置边距，左右边距相等，即可达到居中的效果 */
+    }
+</style>
+<body>
+    <div id="box">
+        <!-- div#box : 创建有ID的div -->
+        <div class="item" style="background: url(imgs/a.jpg);"></div>
+        <div class="item" style="background: url(imgs/b.jpg);"></div>
+        <div class="item" style="background: url(imgs/c.jpg);"></div>
+    </div>
+</body>
+</html>

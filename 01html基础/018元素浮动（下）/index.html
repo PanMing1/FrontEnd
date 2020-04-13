@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    .a {
+        width: 18%;
+        background: red;
+        /* background: red url(xxx.png) on-repeat; : background可以这样玩*/
+    }
+
+    .b {
+        width: 60%;
+        background: green;
+    }
+
+    .c {
+        width: 22%;
+        background: blue;
+    }
+
+    .a,
+    .b,
+    .c {
+        height: 200px;
+        float: left;
+    }
+
+    .d {
+        width: 100%;
+        height: 400px;
+        background: #000000;
+    }
+    .h{
+        overflow: auto;
+        /* 对于超出边界的元素溢出 */
+        /* clear: left/right/both : 想当前元素不受浮动元素的影响 */
+        /* clear: both : 给所有的样式加上这个可以使所有的都不受前面的影响 */
+    }
+</style>
+
+<body>
+    <div class="h">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+    </div>
+    <div class="d"></div>
+</body>
+
+</html>

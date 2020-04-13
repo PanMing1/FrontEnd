@@ -1,0 +1,47 @@
+style:表示风格、样式
+style中有属性： width height color background-color
+颜色的三原色：红（R）绿（G）蓝（B）
+图片格式: jpg gif png
+gif 可以做常见的图形和图标
+支持动画 只有全透明和不透明两种模式 只有256中颜色
+jpg 
+采用有损压缩算法 体积较小 不支持透明 不支持动画
+png 
+采用无损压缩算法 体积也相对较小 支持背景透明 不支持动画
+svg
+一般用于保存颜色较少以及形状相对简单的图片
+
+<html lang="en">
+<head>
+</head>
+<style type="text/css">
+    html,body{
+        margin: 0; --为零时不显示页面滚动条
+        height: 100%;
+    }
+    body{
+        background-image: url(imgs/dong.gif);  --页面背景图
+        background-repeat: no-repeat; --去除图片平铺在桌面上
+        background-position: center center; --图片位置
+    }
+</style>
+<body>  
+</body>
+</html>
+
+浮动元素会脱离网页文档，与其他元素发生重叠，但是不会与文字内容发生重叠
+浮动元素在排列时，只参考前一个元素位置即可
+浮动元素的重叠问题
+1、浮动元素不会覆盖文字内容
+2、浮动元素不会覆盖图片内容
+3、浮动元素不会覆盖表单元素
+
+<div class="green"></div>
+<!-- div.green ：可以快速的建好div -->
+<div id="green"></div>
+<!-- div#green ：可以快速的建好div -->
+float: left right ：浮动
+/* background: red url(xxx.png) on-repeat; : background可以这样玩*/
+/* overflow: auto ：对于超出边界的元素溢出 */
+/* clear: left/right/both : 想当前元素不受浮动元素的影响 */
+/* clear: both : 给所有的样式加上这个可以使所有的都不受前面的影响 */

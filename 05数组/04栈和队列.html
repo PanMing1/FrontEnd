@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var array1 = [10, 20, 30, 40, 50];
+        document.write("数组元素" + array1 + "</br>");
+        // 数组.push(参数) 在数组后面增加元素
+        var res1 = array1.push(70, 80);
+        document.write(array1 + "</br>");   //10,20,30,40,50,70,80
+        // 返回值 是添加完数组后数组的长度
+        document.write(res1 + "</br>");  //7
+
+        var array2 = [10, 20, 30, 40, 50];
+        // 数组.pop() 移除数组末尾的元素
+        var res2 = array2.pop();
+        document.write(array2 + "</br>");  //10,20,30,40
+        //返回值 是移除的元素
+        document.write(res2 + "</br>");  //50
+
+        var array3 = [10, 20, 30, 40, 50];
+        //数组.shift() 移除数组头部的元素
+        var res3 = array3.shift();
+        document.write(array3 + "</br>"); //20,30,40,50
+        //返回值 是移除的元素
+        document.write(res3 + "</br>");  //10
+
+        var array4 = [10, 20, 30, 40, 50];
+        //数组.unshift(参数) 插入数组头部的元素
+        var res4 = array4.unshift(66, 88);
+        document.write(array4 + "</br>");  //66,88,10,20,30,40,50
+        //返回值 是添加完数组后数组的长度
+        document.write(res4 + "</br>");  //7
+
+        var array5 = [10, 20, 30, 40, 50];
+        //数组1.concat(数组2) 将两个数组拼接成一个新数组，原数组不变
+        //返回值 是新数组
+        var array6 = ["red", "web"];
+        var res5 = array5.concat(array6);
+        document.write(res5 + "</br>");  //10,20,30,40,50,red,web
+        document.write(array5 + "</br>");  //10,20,30,40,50
+        document.write(array6 + "</br>");  //red,web
+
+        var array8 = [00, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        //数组.slice(start,end) 截取数组元素，原数组不变
+        //返回值 是新数组
+        var res6 = array8.slice(1, 6);
+        document.write(array8 + "</br>");   //0,10,20,30,40,50,60,70,80,90
+        document.write(res6 + "</br>");    //10,20,30,40,50
+
+        var array9 = [00, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        //数组.splice(start,length,元素……)
+        //删除功能
+        var res7 = array9.splice(1, 2);
+        document.write(array9 + "</br>");   //0,30,40,50,60,70,80,90
+        document.write(res7 + "</br>");    //10,20
+        //插入功能
+        var array10 = [00, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        var res8 = array10.splice(2, 0, "project", "java", "Steam", "Google");
+        document.write(array10 + "</br>");   //0,10,project,java,Steam,Google,20,30,40,50,60,70,80,90
+        document.write("返回值" + res8 + "</br>");  //‘没有返回值’
+        //替换功能
+        var array11 = [00, 10, 20, 30, 40, 50, 60, 70, 80, 90];
+        var res9 = array11.splice(3, 2, "巫妖王", "伊利丹");
+        document.write(array11 + "</br>");  //0,10,20,巫妖王,伊利丹,50,60,70,80,90
+        document.write(res9 + "</br>");    //30,40
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

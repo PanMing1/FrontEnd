@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>标题</title>
+</head>
+<body>
+</body>
+<body>
+    <h1>h1~h6都是标题</h1>
+    <p>段落</p>
+    <i>斜体</i>
+    <b>粗体</b>
+    <hr>分割线
+    <p>段落<br>换行</p>
+    <p>空 格符</p>
+    <a href="http://www.runoob.com">这是一个链接</a>
+    属性：target='_blank' 空白页打开超链接
+    <!-- 这是一个注释 -->
+    <br>换行符
+
+    <code>电脑自动输出</code><br><br>
+    这是 <sub> 下标</sub> 和 <sup> 上标</sup>
+    <pre>...</pre>
+    此例演示如何使用 pre 标签
+    对空行和空格
+    进行控制
+    
+    字体：
+    <b>加粗文本</b>
+    <i>斜体文本</i>
+    下列字体：这些标签常用于显示计算机/编程代码。
+    <code>计算机输出</code>
+    <kbd>键盘输入</kbd>
+    <tt>打字机文本</tt>
+    <samp>计算机代码样本</samp>
+    <var>计算机变量</var>
+
+    字体显示样式：
+    <del>给文字增加删除线</del> 
+    <p>10<sup>上标</sup></p> 
+    <u>给文字增加下划线</u> 
+    <center>居中</center> 
+
+    缩写和首字母缩写
+    <abbr title="etcetera">etc.</abbr>
+    <acronym title="World Wide Web">WWW</acronym>
+    <bdo dir="rtl">该段落文字从右到左显示。</bdo></p>  
+    <img src=" title="鼠标划上去时的提示" alt="表示图片加载失败的提示">图片 
+
+    序列：
+    <ul> 排序类型
+        ul中有属性：type="disc（实心点）、circle（空心点）、square（实心方块）"
+        <li>点</li> 
+    </ul> 
+    <ol>排序类型
+        ol中有属性：type="1（数字）、A（大写字母）、a（小写字母）、
+        i（小写罗马字符）、I（大写罗马字符）" 
+        <li>数字</li> 
+    </ol> 
+
+    表格：
+    <table border="1px" cellspacing="0" >
+        属性：border：边框 cellspacing：单元格空隙
+        <tbody> 表格的主题
+        tr*6>td*6：表单快捷键
+        <th colspan="7">个人简历</th>
+        <!-- th：加粗并水平居中 -->
+        <colgroup span="6" widht="100px">
+        <!-- 设置每一格的宽度 -->
+        <!-- col：表示一列 -->
+        <col width="200px">
+        <tr align="center" height="">
+            <td colspan="7" rowspan="4"></td>
+            <!-- colspan：列的合并单元格 rowspan：行的合并-->
+        </tr>
+        </tbody>      
+    </table>
+    表单的知识点总结
+    1、form必须有action属性，表示提交地址
+    2、所有需要提交的数据，input必须有name属性
+    3、input按钮的文字，使用value属性表示
+    4、input必须放在form标签内才能提交
+    <inpout type="text"></inpout> --文本输入框
+    <inpout type="password"></inpout> --密码输入框
+    <inpout type="radio"></inpout> --单选框
+    <inpout type="checkbox"></inpout> --复选框
+    <inpout type="button"></inpout> --普通按钮
+    <inpout type="submit"></inpout> --提交按钮
+    <inpout type="reset"></inpout> --重置按钮
+    <inpout type="file"></inpout> --文本选择框
+
+    get请求和post请求的区分
+    1、get请求通常表示获取数据
+    2、post请求通常表示提交数据
+    3、get请求发送的数据都写在地址栏上，用户可见
+    4、post请求发送的数据用户不可见
+    5、get请求不能提交大量数据，但post可以，因此不要混用
+</body>
+</html>

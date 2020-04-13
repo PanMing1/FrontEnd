@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        /* 
+        系統排序
+        reverse（） 逆向排序
+        数组.reverse（）
+        sort（） 升序排序 
+        */
+        var array = [10, 5, 15, 1];
+        //    注意：是按照字符串进行排序的
+        // alert(array.sort());   //1,10,15,5
+        /*
+         冒泡排序
+         */
+        var array1 = [1, 8, 10, 38, 56, 4, 49, 12, 84, 14];
+        // 將上面的数组冒泡排序
+        for (var i = 0; i < array1.length; i++) {
+            for (var j = 0; j < array1.length - i - 1; j++) {
+                if (array1[j] > array1[j + 1]) {
+                    var num = array1[j + 1];
+                    array1[j + 1] = array1[j];
+                    array1[j] = num;
+                }
+            }
+        }
+        alert(array1);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

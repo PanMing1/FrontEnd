@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数组遍历</title>
+    <script type="text/javascript">
+        var array1 = new Array(10, true, "Hello");
+        document.write(array1 + "</br>");  //10,true,Hello
+
+        var array2 = new Array(5);
+        document.write(array2 + "</br>");  //,,,,
+
+        var array3 = [10, true, "HelloWorld"];
+        document.write(array3 + "</br>"); //10,true,HelloWorld
+
+        var array4 = [10, 20, "nihao", "Hello", "World", "bushi"];
+        document.write(array4.length + "</br>");  //6
+
+        var array44 = [20,30,40,50,60];
+        array44.length = 2;
+        document.write(array44 + "</br>");    //20,30
+
+        document.write(array4[1 + 2] + "</br>");  //Hello
+        var array5 = [];
+        for (var i = 0; i < 10; i++) {
+            array5[i] = i * i;
+        }
+        document.write(array5 + "</br>"); //0,1,4,9,16,25,36,49,64,81
+
+        //随机数
+        var array6 = [];
+        for (var i = 0; i < 5; i++) {
+            array6[i] = Math.random();
+        }
+        document.write(array6 + "</br>");  //0.7499778575208367,0.3734424379253163,0.17550203788166585,0.2293905363425266,0.37731343077657264
+
+        document.write("----for循环遍历---</br>");
+        for (var i = 0; i < array4.length; i++) {
+            document.write(array4[i] + "</br>");
+        }
+        
+        // for……in 进行遍历  效率比for循环高
+        document.write("----for……in遍历---</br>");
+        for (var i in array4) {
+            document.write(array4[i] + "</br>");
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
