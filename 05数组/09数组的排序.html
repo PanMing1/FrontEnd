@@ -29,7 +29,21 @@
                 }
             }
         }
-        alert(array1);
+        // alert(array1);
+        /* 
+        选择排序
+        */
+       var array2 = [14,5,8,61,35,30,84,2];
+       for(var i = 0;i<array2.length-1;i++){
+           for(var j=i+1;j<array2.length;j++){
+               if(array2[i]>array2[j]){
+                   var num = array2[i];
+                   array2[i]=array2[j];
+                   array2[j]=num;
+               }
+           }
+       }
+       alert(array2);
     </script>
 </head>
 
